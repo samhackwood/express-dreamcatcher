@@ -1,0 +1,19 @@
+
+<form method="POST" action="/dreams/update?_method=PUT">
+    
+    <div>
+        <input name="title" type="text" value="<%= dreams.title %>" class="comment-textarea" id="edit-title"/>
+    </div>
+    
+    <div class="block-edit">
+        <textarea name="content" class="comment-textarea"> <%= dreams.content %> </textarea>
+    </div>
+    
+    <input type="hidden" name="id" value="<%= dreams._id %>" />
+    
+    <div class="submit-comment">
+        <button type="submit" class="submit-btn" > Update Dream </button>
+    </div>
+    
+</form>
+<h1 class="title-mydreams">Edit my Dream</h1>

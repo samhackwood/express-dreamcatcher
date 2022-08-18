@@ -1,0 +1,21 @@
+<h1 class="title-mydreams">Edit my profile</h1>
+
+<form method="POST" action="/profile/update?_method=PUT">
+
+    <div>
+        <input name="firstName" type="text" value="<%= currentUser.firstName %>" class="comment-textarea" id="edit-title"/>
+    </div>
+
+    <div>
+        <input name="lastName" type="text" value="<%= currentUser.lastName %>" class="comment-textarea" id="edit-title"/>
+    </div>
+
+    <div>
+        <input name="emailAddress" type="text" value="<%= currentUser.emailAddress %>" class="comment-textarea" id="edit-title"/>
+    </div>
+
+    <div class="submit-comment">
+        <button type="submit" class="submit-btn" > Update my Profile </button>
+    </div>
+
+</form>

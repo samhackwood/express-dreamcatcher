@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Roboto+Flex:wght@100;200;300;400;500;600;700;800;900;1000&display=swap');
+
+body{
+    background-color: #333333;
+    color: white;
+}
+
+/* LAYOUT */
+    
+.logo {
+    width: 200px;
+}
+    
+header {
+    display: Flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3%;
+}
+
+/* ADD A DREAM BOX */
+
+.posting {
+    display: flex;
+    flex-direction: column;
+    background-color: #8C52FD;
+    height: 200px;
+    width: 600px;
+    margin-right: 30%;
+    border-radius: 10px;
+}
+
+.box-add-dream{
+    height: 110px;
+    width: 600px;
+    background-color: #8C52FD;
+    border: none;
+}
+
+.box-title-add-dream {
+    text-align: center;
+    background-color: #8C52FD;
+    color: white;
+    border: none;
+    
+}
+
+::placeholder {
+    color: white
+}
+
+.send-button {
+    float: right;
+    background-color: #8C52FD;
+    border: none;
+    margin: 5px;
+}
+
+.icon-send{
+    height: 20px;
+    width: auto;
+    margin: 15px 20px;
+    background-color: Transparent;
+}
+
+/* LAYOUT / NAV */
+
+.nav{
+    display: Flex;
+    flex-direction: column;
+    margin: 10px 80px 0 5px;
+}
+    
+.nav-title{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-title:hover{
+    color:#8C52FD;
+    font-size: 20px;
+}
+    
+.nav-body{
+    display: Flex;
+    flex-direction: row;
+    justify-content: left;
+    margin: 50px 100px 0 20px;
+}
+    
+.icon-nav{
+    height: 30px;
+    width: auto;
+    margin: 15px 20px;
+}
+
+#button-nav{
+    font-family: 'roboto', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: #8C52FD;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 15px;
+    width: 180px;
+    height: 50px;
+}
+
+/* SIGN UP AND SIGN IN */
+
+.title-signup-in{
+    color: #8C52FD;
+    font-family: 'roboto', sans-serif;
+    font-weight: 100;
+    text-align: center
+}
+
+#button-signup-in{
+    font-family: 'roboto', sans-serif;
+    font-weight: 100;
+    font-size: 25px;
+    padding: 5px 20px;
+    background-color: #8C52FD;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    min-width: 100px;
+    max-width: 300px;
+    height: 50px;
+}
+
+.signup-in{
+    display: Flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+#floatingInput {
+    background-color: #8C52FD;
+    border-color: #8C52FD;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+#floatingPassword{
+    border-color: #8C52FD;
+    background-color: #8C52FD;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+/* MY DREAMS */
+.title-mydreams{
+    color: white;
+    font-family: 'roboto', sans-serif;
+    font-weight: 100;
+    text-align: left;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+.all-dreams {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.icon-mydreams{
+    height: 20px;
+    width: auto;
+    margin: 20px 10px;
+}
+
+.dream-comment-flip {
+    display: flex;
+    flex-direction: column-reverse
+}
+
+.author-title {
+    display: flex;
+}
+
+.dream-title{
+    font-family: 'roboto', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+.dream-title:hover{
+    color:#8C52FD;
+}
+
+.mydreams-topline{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.mydreams-each{
+    width: 900px;
+    margin-left: 50px;
+}
+
+.line{
+    border-bottom: 1px solid #8C52FD;
+    width: 600px;
+    margin: 50px auto;
+}
+
+/* ONE DREAM */
+
+.comment{
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-textarea{
+    height: 100px;
+    width: 600px;
+    background-color: #525252;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.submit-comment{
+    display: flex;
+    justify-content: right;
+}
+
+.submit-btn{
+    background-color: #8C52FD;
+    color: white;
+    border: none;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.block-onedream{
+    margin-left: 50px;
+}
+
+/* EDIT & UPDATE ONE DREAM */
+
+#edit-title{
+    height: 35px;
+    margin-left: 50px;;
+}
+
+.block-edit{
+    margin: 20px 0;
+    margin-left: 50px;
+}
+
+/* MY PROFILE */
+
+.profile-fln{
+    font-family: 'roboto', sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.profile-epd {
+    font-family: 'roboto', sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    margin: 10px 0;
+}
+
+#link-pwd {
+    font-family: 'roboto', sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    margin: 10px 0;
+}
+
+#link-pwd:hover{
+    color:#8C52FD;
+    font-size: 20px;
+}
+
+#link-pwd2:hover{
+    color:#8C52FD;
+    font-size: 20px;
+}
+
+.block-profile{
+    display: flex;
+    flex-direction: column;
+    align-content: left;
+}
+
+.hor-line{
+    border-bottom: 1px solid #8C52FD;
+    margin: 20px 0;
+}

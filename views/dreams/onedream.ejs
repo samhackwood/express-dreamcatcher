@@ -1,0 +1,40 @@
+<div class="block-onedream">
+    <p><%= moment(dreams.createdAt).fromNow() %></p>
+    <div class="author-title">
+    <h3><%= dreams.title %>  - &nbsp; </h3>
+    <br><br><br>
+    <h3><%= dreams.author %></h3>
+    </div>
+    <p><%= dreams.content %></p>
+    
+    <div>
+        <a href="/dreams/edit?id=<%=dreams._id%>"><img src="../images/edit.png" class="icon-mydreams"/></a>
+    </div>
+    
+    <form method="POST" action="/comment">
+        <div class="comment">
+            <label>Comment</label>
+            <textarea type="text" name="content" class="comment-textarea"></textarea>
+        </div>
+        <div>
+            <input type="hidden" name="dreamId" value="<%=dreams._id%>"/>
+        </div>
+        <div class="submit-comment">
+            <button type="submit" class="submit-btn">Submit</button>
+        </div>
+    </form>
+    
+    <div class="dream-comment-flip">
+    <% comments.forEach(function(comment){  %>
+        <div class="mydreams-each">
+            <div class="mydreams-topline">
+                <div><%= comment.firstName %> <%= comment.lastName %> </div>
+                <div><%= moment(comment.createdAt).fromNow() %></div>
+            </div>
+            <div><%= comment.content %></div>
+        </div>      
+        <div class="line"></div>
+        <% }) %>
+        
+    </div>
+    </div>

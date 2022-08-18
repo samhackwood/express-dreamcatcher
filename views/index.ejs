@@ -1,0 +1,18 @@
+
+    <% dreams.forEach(function(dream){  %>
+        <div class="mydreams-each">
+            <div class="mydreams-topline">
+                <div class="dream-title"><a href="/dreams/onedream?id=<%=dream._id%>" class="dream-title"><%= dream.title %></a></div>
+                <div class="dream-title"><a href="/dreams/onedream?id=<%=dream._id%>" class="dream-title"><%= dream.author %></a></div>
+                <div><%= moment(dream.createdAt).fromNow() %></div>
+            </div>
+            <div><%= dream.content %></div>
+            <div>
+                <a href="dreams/mydreams"><img src="../images/heart.png" class="icon-mydreams"/></a>
+                <a href="dreams/mydreams"><img src="../images/mycomment.png" class="icon-mydreams"/></a>
+                <a href="dreams/mydreams"><img src="../images/mybookmark.png" class="icon-mydreams"/></a>
+                <a href="dreams/mydreams"><img src="../images/edit.png" class="icon-mydreams"/></a>
+            </div>
+        </div>      
+        <div class="line"></div>
+    <% }) %>

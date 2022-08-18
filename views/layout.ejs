@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Catcher</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+
+    </div>
+        <header>
+            <a href="/">
+                <img src="../images/logo.png" class="logo"/>
+            </a>   
+            <div class="posting">
+                <form method="POST" action="/dream">
+
+                    <div>
+                        <label>What's your dream?</label>
+                        <input type="text" name="title" placeholder="Title of your dream" class="box-title-add-dream"></input>
+                        <textarea type="text" name="content" class="box-add-dream"></textarea>
+                    </div>
+                    <div>
+                        <button class="send-button" type="submit"><img src="../images/sendmail.png" class="icon-send"/></button>
+                    </div>
+            
+            
+                </form>
+            </div> 
+        </header>
+  
+        <div class="nav-body">
+            <nav>
+                <div class="nav">
+
+                    <a href="/dreams/mydreams" class="nav-title"><img src="../images/mydreams.png" class="icon-nav"/>My Dreams</a>
+                    <a href="/workinprogress" class="nav-title"><img src="../images/myfriends.png" class="icon-nav"/>My Friends</a>
+                    <a href="/workinprogress" class="nav-title"><img src="../images/bookmark.png" class="icon-nav"/>Bookmark</a>
+                    <a href="/workinprogress" class="nav-title"><img src="../images/explore.png" class="icon-nav"/>Explore</a>
+                    <a href="/profile/myprofile" class="nav-title"><img src="../images/myprofil.png" class="icon-nav"/>Profile</a> 
+                    <a href="/" class="nav-title" id="button-nav">Home</a> 
+                    <% if(currentUser) { %>
+                        Hi <%= currentUser.firstName %> <%= currentUser.lastName %>
+                        <a class="nav-title" href="/auth/logout">Logout</a> &nbsp;
+                    <% } else {  %>
+                        <a class="nav-title" href="/auth/signup">Signup</a> &nbsp;
+                        <a class="nav-title" href="/auth/signin">Signin</a>
+                    <% } %>
+
+                </div>
+            </nav>
+            <div class="all-dreams">
+                <%- body %>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+    
+</body> 
+
+</html>
+
